@@ -1,0 +1,792 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Gruppo&family=Quicksand:wght@600&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-size: 1.1rem;
+  min-height: 10%;
+  background-image: url(imagenes/fondo1.png);
+  background-size: cover;
+  
+}
+
+.grid-container > * {
+  padding: 10px;
+}
+
+.img-logo-art{
+  text-align: center;
+}
+
+
+.header-logo{
+	display: block;
+}
+
+
+.header {
+  position: fixed;
+  width: 100%;
+  grid-area: header;
+  background-color: black;
+  z-index: 1;
+}
+
+
+.header-logo{
+  display: block; 
+  z-index: 1;
+}
+
+.nav-menu{
+  width: 100%;
+  height: 30px;
+  display: inline-block;
+}
+
+ul {
+  margin-left: 0;
+  padding: 0;
+}
+
+
+li{
+  list-style: none;
+  display: inline-block;
+  float: right;
+  margin-left: 10px;
+}
+
+li a{
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  font-family: 'Gruppo', cursive;
+  font-size: 18px;
+}
+
+li a:hover{
+    border-top: 2px solid white;
+    transition: 0.2s;
+}
+
+a h1{
+  font-family: 'Gruppo', cursive;
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 5px;
+  color: white;
+  font-size: 20px;
+}
+
+a h1:hover{
+  opacity: 0.5;
+}
+
+.logo-header{
+	position: relative;
+	justify-content: flex-start;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: #afd6af;
+  visibility: hidden;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #fdcfcf;
+  visibility: hidden;
+}
+
+.main {
+  grid-area: main;
+  margin-top: 50px;
+  grid-area: main;
+  background-color: black;
+  cursor: default;
+}
+
+h1{
+  color: white;
+}
+
+h3{
+  font-family: 'Gruppo', cursive;
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 10px;
+  cursor: default;
+}
+h3:hover{
+  border-top: 1px solid #525252;
+  color: #525252;
+}
+
+h2{
+  font-family: 'Gruppo', cursive;
+  display: inline-block;
+  margin-top: 2px;
+  margin-left: 10px;
+  cursor: default;
+}
+
+h1,.logo_name{
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+h2:hover{
+  margin-left: 20px;
+  transition: 0.3s;
+  border-left: 2px solid #525252;
+}
+
+h3{
+  text-align: center;
+  font-family: 'Gruppo', cursive;
+  font-size: 15px;
+  cursor: default;
+}
+
+h4{
+	text-align: left;
+	margin-left: 10px;
+	color: white;
+	font-family: 'Gruppo', cursive;
+}
+
+.bio{
+	position: relative;
+	padding: 20px;
+	left: 15px;
+	cursor: default;
+}
+
+p{
+	color: white;
+	cursor: default;
+	text-align: left;
+	font-family: 'Gruppo', cursive;
+  font-size: 20px;
+}
+
+.bio-imagenes{
+	margin-top: 80px;
+	text-align: center;
+}
+
+.bio-redes{
+	text-align: center;
+}
+
+.box-artistas-left
+{
+  margin-left: 0;
+  margin-top: 100px;
+  width: 180px;
+  height: 165px;
+  background-color: transparent;
+  display: block;
+  padding: 0px;
+  position: fixed;
+  text-shadow: none;
+  font-family: 'Gruppo', cursive;
+  box-shadow: none;
+}
+
+.box-artistas-left p{
+  font-size: 15px;
+  font-family: 'Gruppo', cursive;
+}
+
+.box-artistas-left-julieta{
+  padding: 5px;
+  margin-bottom:  10px;
+  width: 100%;
+  height: 30px;
+  display: block;
+}
+.box-artistas-left-julieta:hover{
+  border-left: 2px solid white;
+  transition: 0.8s;
+
+}
+.box-artistas-left-julieta a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.box-artistas-left-julieta a:hover{
+  color: white;
+}
+
+
+.box-artistas-left-julian{
+  margin-bottom:  10px;
+  padding: 5px;
+  width: 100%;
+  height: 30px;
+  display: block;
+}
+.box-artistas-left-julian:hover{
+  border-left: 2px solid white;
+  transition: 0.8s;
+}
+.box-artistas-left-julian a{
+  text-decoration: none;
+  color: white;
+  display: block;  
+}
+.box-artistas-left-julian a:hover{
+  color: white;
+}
+
+
+.box-artistas-left-kabi{
+  margin-bottom:  10px;
+  padding: 5px;
+  width: 100%;
+  height: 30px;
+  display: block;
+}
+
+.box-artistas-left-kabi:hover{
+  border-left: 2px solid white;
+  transition: 0.8s;
+}
+.box-artistas-left-kabi a{
+  text-decoration: none;
+  color: white;  
+  display: block;
+}
+
+.box-artistas-left-julianna{
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 100%;
+  height: 30px;
+}
+
+.box-artistas-left-julianna:hover{
+  border-left: 2px solid white;
+  transition: 0.8s;
+  display: block;
+}
+.box-artistas-left-julianna a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.box-artistas-left-julian a:hover{
+  color: white;
+  display: block;
+}
+
+.presskit a{
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.box-artistas-left-reverie{
+  padding: 5px;
+  margin-bottom:  10px;
+  width: 100%;
+  height: 30px;
+  display: block;
+}
+.box-artistas-left-reverie:hover{
+  border-left: 2px solid white;
+
+  transition: 0.8s;
+
+}
+.box-artistas-left-reverie a{
+  text-decoration: none;
+  color: white;
+  display: block;
+}
+.box-artistas-left-reverie a:hover{
+  color: white;
+}
+
+
+
+.presskit p{
+  text-align: center;
+  cursor: pointer;
+  background-color: #141414;
+  opacity: 0.8;
+  font-size: 15px;
+  border-top: 1px solid white;
+}
+
+.presskit p:hover{
+  opacity: 1;
+  background-color: #232323;
+  font-size: 17px;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header" 100px
+    "."  30px
+    "main"    auto
+    "." 30px
+    "footer"  80px;
+}
+
+/*                            TABLETS Y CELULARES -1060PX                         */
+
+@media (max-width: 1060px){
+a.inicio{
+    display: none;
+  }
+
+  .header{
+    width: 100%;
+    padding: 0;
+  }
+
+  .nav-menu{
+    float: none;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    height: auto;
+    background-color: black;
+  }
+
+  .main{
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+  }
+
+  .bio{
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .header-logo{
+    position: relative;
+    top: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    margin-left: 0;
+  }
+
+nav ul{
+    padding: 0;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+/*
+  ul{
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+*/
+
+ul.menu{
+    margin-left: 0px;
+    padding: 0;
+    width: 100%;
+  }
+
+  li{
+    margin-top: 10px;
+    margin-left: 0;
+    position: relative;
+    float: none;
+    display: inline-grid;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  .box-artistas-left{
+    margin-top: 5px;
+    position: relative;
+    display: inline-flex;
+    padding: 0px;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gruppo', cursive;
+  }
+
+  .box-artistas-left a{
+    background-color: #141414;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    opacity: 0.8;
+    font-family: 'Gruppo', cursive;
+    font-size: 15px;
+  }
+
+  .box-artistas-left-julian, .box-artistas-left-julieta, .box-artistas-left-julianna, .box-artistas-left-kabi, .box-artistas-left-fabricio, .box-artistas-left-reverie{
+    display: block;
+    text-align: center;
+    width: 33.3%;
+    margin-top: 0px;
+    justify-content: stretch;
+    top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 30px;
+    margin-bottom: 0;
+  }
+  .box-artistas-left-julian p, .box-artistas-left-julieta p, .box-artistas-left-julianna p, .box-artistas-left-kabi p, .box-artistas-left-fabricio p, .box-artistas-left-reverie p{
+    text-align: center;
+    align-items: center;
+  }
+  .box-artistas-left-julian a, .box-artistas-left-julieta a, .box-artistas-left-julianna a, .box-artistas-left-kabi a, .box-artistas-left-fabricio a, .box-artistas-left-reverie a{
+    text-align: center;
+    display: block;
+    justify-content: stretch;
+  }
+
+  .box-artistas-left-julian a:hover, .box-artistas-left-julieta a:hover, .box-artistas-left-julianna a:hover, .box-artistas-left-kabi a:hover, .box-artistas-left-fabricio a:hover, .box-artistas-left-reverie a:hover{
+    text-align: center;
+    display: block;
+    background-color: white;
+    color: black;
+  }
+
+.footer {
+    position: relative;
+    bottom: 0px;
+    grid-area: footer;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
+}
+
+
+/*                            ESCRITORIO +1060PX                         */
+@media (min-width:1060px){
+  .grid-container {
+    grid-template:
+      "header  header header"  85px
+      ".        main       ."  auto
+      "footer  footer footer"  40px /
+      0px    auto   0px;
+  }
+
+  .header{
+    background-color: black;
+    width: 100%;
+    padding: 0;
+}
+
+.main{
+    margin-top: 50px;
+    height: auto;
+    width: 100%;
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .header-logo{
+    margin-left: 15px;
+  }
+
+ul.menu{
+  margin-right: 10px;
+}
+
+  li{
+    display: inline-block;
+    float: right;
+  }
+
+  .footer {
+    position: relative;
+    grid-area: footer;
+    background-color: black;
+    margin-top: 60px;
+    height: 80px;
+    bottom: 0px;
+    color: white;
+    font-size: 15px;
+    text-align: center;
+  }
+
+}
+
+@media (max-width: 1060px) {
+    .box-artistas-left {
+        margin-top: 5px;
+        position: relative;
+        display: inline-flex;
+        padding: 0px;
+        width: 100%;
+        height: 48px;
+        align-items: baseline;
+        justify-content: space-evenly;
+        font-family: 'Gruppo', cursive;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        align-content: center;
+    }
+}
+
+
+///////////////////////////////////////// REVISARRRRRRRRRRRRRRRRRRRRRRRRRR - ULT FECHA MODIFC: 30-8-24
+///////////////////////////////////////// REVISARRRRRRRRRRRRRRRRRRRRRRRRRR - ULT FECHA MODIFC: 30-8-24
+///////////////////////////////////////// REVISARRRRRRRRRRRRRRRRRRRRRRRRRR - ULT FECHA MODIFC: 30-8-24
+
+.box-artis
+
+
+/*            MEDIA                 */
+/*        CELULARES                */
+
+/* 
+
+@media (max-width: 443px){
+  .box-artistas-left{
+    display: inline-flex;
+    border:0;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    background-color: transparent;
+    font-family: 'Gruppo', cursive;
+  }
+
+  .box-artistas-left p{
+    background-color: black;
+    margin-top: 30px;
+  }
+
+  .img-bio{
+    text-align: center;
+    padding: 15px;
+    margin-left: 10px;
+    width: 100%;
+    float: none;
+    z-index: 1;
+  }
+
+  .bio-redes a{
+    display: inline-block; width: 25%; height: auto;
+    align-content: center;
+
+  }
+  a.inicio{
+    display: none;
+  }
+
+  .header-logo{
+    position: relative;
+    top: 10px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  ul{
+    left: 0;
+    margin-left: 0;
+  }
+
+  li{
+    position: relative;
+    float: none;
+    display: inline-grid;
+    justify-content: space-around;
+    width: 100%;
+    left: 0;
+    margin-left: 0;
+  }
+
+
+}
+
+@media (max-width: 320px)(max-width: 430px){
+.nav-menu{
+    float: none;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+  ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+  }
+
+ .bio{
+    display: block;
+    width: 100%;
+    justify-content: center;
+  }
+ 
+ .footer {
+  grid-area: footer;
+  background-color: black;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+ }
+
+ .box-artistas-left{
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    box-sizing: border-box;
+    height: 30px;
+    z-index: 1;
+    font-family: 'Gruppo', cursive;
+  }
+
+}
+
+
+
+       TABLETS               
+
+
+
+@media (max-width: 850px) {
+  .grid-container {
+   grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header  header"
+    "navbar  navbar"
+    "sidebar main"
+    "footer  footer"; 
+
+    grid-template:
+      ".  ." 
+      "navbar  navbar" 70px
+      "main main"   auto
+      "  "  /
+      200px    auto;
+}
+  .nav-menu{
+    float: none;
+    display: block;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+  }
+
+  .header{
+    height: 150px;
+    opacity: 0.95;
+  }
+
+  .box-artistas-left{
+    margin-top: 5px;
+    position: relative;
+    display: inline-flex;
+    padding: 0px;
+    width: 100%;
+    height: 35px;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Gruppo', cursive;
+  }
+
+  .box-artistas-left a{
+    background-color: #141414;
+    margin-top: 0;
+    padding: 0;
+    border: none;
+    opacity: 0.8;
+    font-family: 'Gruppo', cursive;
+    font-size: 15px;
+  }
+
+  .box-artistas-left-julian, .box-artistas-left-julieta, .box-artistas-left-julianna, .box-artistas-left-kabi{
+    display: block;
+    text-align: center;
+    width: 33.3%;
+    margin-top: 0px;
+    justify-content: stretch;
+    top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 30px;
+    margin-bottom: 0;
+  }
+  .box-artistas-left-julian p, .box-artistas-left-julieta p, .box-artistas-left-julianna p, .box-artistas-left-kabi p{
+    text-align: center;
+    align-items: center;
+  }
+  .box-artistas-left-julian a, .box-artistas-left-julieta a, .box-artistas-left-julianna a, .box-artistas-left-kabi a{
+    text-align: center;
+    display: block;
+    justify-content: stretch;
+  }
+
+  .box-artistas-left-julian a:hover, .box-artistas-left-julieta a:hover, .box-artistas-left-julianna a:hover, .box-artistas-left-kabi a:hover{
+    text-align: center;
+    display: block;
+    background-color: white;
+    color: black;
+  }
+
+}
+
+
+
+
+/*        ESCRITORIOS                
+
+
+@media (min-width: 950px) {
+  .grid-container {
+    grid-template:
+      "header  header header"  70px
+      ".        main       ." auto
+      "footer  footer footer"  40px /
+      200px    auto   200px;
+  }
+
+}

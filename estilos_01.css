@@ -1,0 +1,300 @@
+@import url("https://fonts.googleapis.com/css2?family=Public+Sans&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Alkatra:wght@600&family=Fasthand&family=Josefin+Sans:ital,wght@1,300&family=Kanit:wght@900&family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: "Public Sans", sans-serif;
+  font-size: 1.2rem;
+  min-height: 100%;
+
+  background-image: url(imagenes/fondo1.png);
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.grid-container > * {
+/*  box-shadow: -1px 1px 7px 0px rgba(0, 0, 0, 0.75);  */
+  padding: 10px;
+}
+
+
+.header {
+  grid-area: header;
+  background-color: #85aedd;
+}
+
+.navbar {
+  grid-area: navbar;
+  background-color: black;
+  height: 100%;
+  color: white;
+}
+
+.navbar:hover{
+	color: black;
+	font-style: black;
+}
+
+.sidebar {
+  grid-area: sidebar;
+  background-color: #fdcfcf;
+}
+
+.main {
+  grid-area: main;
+  background-image: url(fondo1.png);
+
+  background-size: cover;
+}
+
+
+.footer {
+  grid-area: footer;
+  background-color: #8c96a0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template:
+    "header"  100px
+    "navbar"  70px
+    "main"    auto
+    "sidebar" 100px
+    "footer"  100px;
+}
+
+
+
+.redes{
+	display: flex;
+	justify-content: space-around;
+	align-content: center;
+	align-items: center;
+	padding: 15px;
+}
+
+.menu{
+	margin-top: 35px;
+	color: black;
+}
+
+ul{
+	padding: 13px;
+	list-style: none;
+}
+
+ul.menu{
+	margin-top: 0;
+}
+
+li{
+	padding: 8px;
+	margin-top: 10px;
+	text-align: left;
+	color: black;
+	border-radius: 3px;
+	border: none;
+	background-color: black;
+}
+
+li:hover{
+	padding: 8px;
+	margin-top: 10px;
+	color: black;
+	font-style: black bold;
+	border-radius: 1px;
+	background-color: white;
+	transition-property: all ;
+	transition-delay: 0.1s;
+	transition: background-color 0.7s;
+}
+
+li a{
+	list-style: none;
+	text-decoration: none;
+	color: white;
+	font-family: 'Bebas Neue', cursive;
+	font-style: bold;
+	display: block;
+}
+
+li a:hover{
+	display: block;
+	color: black;
+}
+
+h3{
+	font-size: 25px;
+	padding: 0px;
+	margin: 0px;
+	text-align: left;
+}
+
+
+
+
+.img-main{
+	text-align: center;
+	justify-content: center;
+	margin-top: 100px;
+}
+
+.text-main{
+	width: 100%;
+	text-align: center;
+	margin-top: 50px;
+	justify-content: center;
+	color: white;
+	font-family: 'Josefin Sans', sans-serif;
+}
+
+
+
+
+
+/* 											RESPONSIVE                        */
+
+
+/*    @media   
+
+
+li a{
+		padding: 15px 75px 10px 0px;
+	}
+	li a:hover{
+		color: black;
+	}
+
+
+  */
+
+
+
+@media (max-width: 900px){
+
+	nav{
+		margin-top: 10px;
+	}
+
+	.navbar{
+		background-color: transparent;
+	}
+
+	.img-main{
+		margin-top: -100px;
+	}
+
+	ul .navbar{
+		position: relative;
+		top: 200px;
+	}
+
+	body{
+		margin: 0 auto;
+		padding: 0;
+	}
+
+ul.menu{
+	margin-top: 125px;
+	color: black;
+	}
+
+	.img-main{
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+	}
+
+	.text-main{
+	text-align: center;
+	justify-content: center;
+	}
+}
+
+@media (max-width: 950px){
+	.img-nav{
+		visibility: hidden;
+	}
+	header{
+		visibility: hidden;
+	}
+
+}
+
+
+@media (max-width: 590px){
+	.main{
+		height: 260px;
+		background-color: transparent;
+	}
+}
+
+
+@media (min-width: 600px) {
+  .grid-container {
+    /* grid-template-columns: 200px auto;
+    grid-template-rows: 100px 50px auto 100px;
+    grid-template-areas: 
+    "header  header"
+    "navbar  navbar"
+    "sidebar main"
+    "footer  footer"; */
+
+    grid-template:
+      ".  ." 
+      "navbar  navbar" 70px
+      "main main"   auto
+      "  "  /
+      200px    auto;
+  }
+
+  body{
+  	margin: 0px auto;
+  	padding: 0;
+  	top:0;
+  }
+
+  .main{
+  	height: 260px;
+  	background-color: transparent;
+  }
+
+  ul .navbar{
+		position: relative;
+		top: 250px;
+	}
+
+  li a{
+  	z-index: 1;
+  }
+}
+
+@media (min-width: 900px) {
+  .grid-container {
+    grid-template:
+      "navbar  main main"  100px
+      "navbar  main main" auto
+      "navbar  main main"  100px /
+      300px    auto   200px;
+  }
+
+	.menu{
+		margin-top: 45px;
+	}
+	.main{
+  	height: 260px;
+  	background-color: transparent;
+  }
+
+
+}

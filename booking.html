@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to fly | Booking</title>
+  <link rel="stylesheet" href="booking_2.css">
+  <link rel="icon" href="imagenes/logotitle.png">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <meta name="viewport" content="widht=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+  <script type="text/javascript">emailjs.init('mmbynXaM7zZYXudiC')</script>
+
+</head>
+<body class="grid-container" style="background-color: black;">
+
+  <header class="header">
+  	<div class="header-logo">
+  		<a href="index.html" style="text-decoration: none; list-style: none;">
+  			<img src="imagenes/logow.png" title="inicio" style="width: 32px; height: auto;"><h2 class="logo_name">HOW TO FLY</h2>
+  		</a>
+ 	</div>
+  	<nav class="nav-menu">
+  		<ul class="menu">
+  			<li><a href="index.html" class="inicio">INICIO</a></li>
+  			<li><a href="contacto.html">CONTACTO</a></li>
+  			<li><a href="artistas.html">ARTISTAS</a></li>
+        <li><a href="tour.html">TOUR</a></li>
+  		</ul>
+  	</nav>
+
+  </header>
+  <article class="main">
+    <h3>FORMULARIO DE SOLICITUD</h3>
+      <div class="box-form">
+        <form class="form" id="form" method="post">
+          <!-- formaction="https://formsubmit.co/ivoprimaverabook@gmail.com" !-->
+          <div class="#">
+            <input type="text" maxlength="20" autocomplete="off" id="name" name="name" required placeholder="NOMBRE Y APELLIDO *">
+          </div>
+            <br>
+          <div class="#">
+            <input type="mail" autocomplete="off" id="mail" name="mail" required placeholder="EMAIL *">
+          </div>
+            <br>
+          <div class="#">
+            <input type="text" autocomplete="off" id="org" name="org" placeholder="ORGANIZACIÓN">
+          </div>
+            <br>
+          <div class="#">
+            <input type="phone" step="number" autocomplete="off" name="phone" id="phone" required placeholder="NÚMERO TELEFONICO *">
+          </div>
+            <br>
+          <div class="#">
+            <input type="month" name="fecha" id="fecha">
+          </div>
+            <br>
+          <div class="#">
+            <input type="text" autocomplete="off" name="observations" placeholder="OBSERVACIONES" id="observations">
+          </div>
+            <br>
+            <br>
+            <button type="submit" id="button" class="enviar">SOLICITAR</button>
+        </form>
+      </div>
+
+  </article>
+
+<!--  <select required="required">
+            <option>Julian Nates</option>
+            <option>Julieta Kühnle</option>
+            <option>Kabi</option>
+            <option>Julianna</option>
+          </select> !-->
+
+<!--  <nav class="navbar">NAVBAR</nav> !-->
+<!--  <aside class="sidebar">SIDEBAR</aside> !-->
+  
+
+<footer class="footer">&copy; 2023 Todos los derechos reservados. | HowToFly</footer>
+	
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+
+<script type="text/javascript" src="booking.js"></script>
+</body>
+
+
+</html>
