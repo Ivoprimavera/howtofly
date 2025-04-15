@@ -1,0 +1,54 @@
+<head>
+  <link rel="icon" href="imagenes/logotitle.png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How to fly | Agency</title>
+  <link rel="stylesheet" href="estilos_01.css">
+</head>
+<body class="grid-container">
+  <nav class="navbar">
+  	<div class="img-nav"><img src="imagenes/logowhite.png" style="width: 280px; height: auto; "></div>
+
+  	<ul class="menu">
+  		<li>
+        <a href="artistas_v2.html" style=" text-align: left; border: 1px solid transparent; font-size: 24px;">ARTISTAS <img src="imagenes/artistas.png" style="width: 35px; height: auto; z-index: 1; border-radius: 18px; position: relative; opacity: 1; padding-top: 0px; border: 0px; float: right;"></a>
+      </li>
+  		<li>
+        <a href="booking.html" style=" text-align: left; border: 1px solid transparent; font-size: 24px;">BOOKING<img src="imagenes/booking.png"  style=" width: 35px; height: auto; z-index: 1; position: relative; opacity: 1; padding-top: 0px; margin-top: -4px; border: 0px; float: right;"></a>
+      </li>
+  		<li>
+        <a href="contacto.html" style=" text-align: left; border: 1px solid transparent; font-size: 24px;">CONTACTO<img src="imagenes/contacto.png" style=" width: 35px; height: auto; z-index: 1; position: relative; opacity: 1; padding-top: 0px; margin-top: -2px; border: 0px; float: right;"></a>
+      </li>
+      <li>
+        <a href="tour.html" style=" text-align: left; border: 1px solid transparent; font-size: 24px;">TOUR<img src="imagenes/tour.png" style=" width: 35px; height: auto; z-index: 1; position: relative; opacity: 1; padding-top: 0px; margin-top: -2px; border: 0px; float: right;"></a>
+      </li>
+  	</ul>
+
+
+  	<div class="redes">
+  		<a href="https://www.facebook.com/profile.php?id=100066675672247">
+        <img src="imagenes/redes/fb.png" style="width: 55px; height: auto; border-radius: 30px;">
+      </a>
+  		<a href="https://www.instagram.com/howtofly_agency/">
+        <img src="imagenes/redes/ig.png" style="width: 55px; height: auto; border-radius: 30px;">
+      </a>
+  		<a href="https://wa.me/5493412274383">
+        <img src="imagenes/redes/wsp.png" style="width: 55px; height: auto; border-radius: 30px;">
+      </a>
+  	</div>
+  </nav>
+  <article class="main">
+ 	<div class="translate-main">
+    <a href="lang/en/home_en.html" title="Lang/Ingles">
+      <img src="imagenes/languaje.png" style="justify-content: center; text-align: center; align-content: center; width: 2%; height: auto; top: 10px; right: 10px; position: fixed; cursor: pointer;" title="Lang/Ingles">
+    </a>
+  </div>
+  	<div class="img-main"><img src="imagenes/logowhite.png" style="width: 35%; height: auto;"></div>
+  	<div class="text-main">
+  		<p>
+  		How To Fly es una agencia que interpreta fielmente las necesidades musicales de nuestros clientes, formando un equipo de destacados Djs/Productores nacionales e internacionales que mediante su trayectoria en cabina e impactantes lanzamientos musicales en los principales sellos de la escena, logran una atractiva y brillante performance cada vez que se presentan en vivo.
+  		</p>
+  </div>
+  </article>
+</body>
+</html>
